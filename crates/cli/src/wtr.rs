@@ -61,7 +61,7 @@ pub fn stdout_buffered_block(
 ) -> StandardStream {
     let out = termcolor::BufferedStandardStream::stdout(color_choice);
     StandardStream(StandardStreamKind::BlockBuffered(out))
-}
+}  
 
 enum StandardStreamKind {
     LineBuffered(termcolor::StandardStream),
